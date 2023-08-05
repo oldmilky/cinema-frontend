@@ -1,0 +1,37 @@
+{
+  "name": "cinema",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "classnames": "^2.3.2",
+    "js-cookie": "^3.0.5",
+    "next": "13.4.12",
+    "nextjs-progressbar": "^0.0.16",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.2",
+    "react-icons": "^4.10.1",
+    "react-loading-skeleton": "^3.3.1",
+    "react-query": "^3.39.3",
+    "react-redux": "^8.1.1",
+    "react-redux-toastr": "^7.6.11",
+    "react-select": "^5.7.4",
+    "sass": "^1.64.1",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.3",
+    "@types/node": "20.4.5",
+    "@types/react-redux-toastr": "^7.6.2",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.12"
+  }
+}

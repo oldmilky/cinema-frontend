@@ -1,0 +1,45 @@
+@import 'app/assets/styles/const.scss';
+
+.nav {
+    background-color: $gray7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: $shadow;
+}
+
+.navItem {
+    width: 90px;
+    margin: 0 20px 0 20px;
+    padding: 15px 0 15px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    color: $gray2;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.navItemActive {
+    width: 90px;
+    margin: 0 20px 0 20px;
+    padding: 15px 0 15px 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    color: $white;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-bottom: 2px solid $first;
+    cursor: pointer;
+}

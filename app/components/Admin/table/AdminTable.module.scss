@@ -1,0 +1,109 @@
+@import 'app/assets/styles/const.scss';
+
+.adminTable {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .header {
+        background-color: $second;
+        padding: 20px 30px 20px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        box-shadow: $shadow;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        box-shadow: $shadow;
+        padding: 20px 30px 20px 30px;
+        background-color: $gray5;
+
+        div {
+            width: 24%;
+            color: $gray1;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0;
+
+            &:last-child {
+                text-align: right;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        box-shadow: $shadow;
+        padding: 20px 30px 20px 30px;
+        background-color: $second;
+
+        div {
+            width: 24%;
+            color: $white;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0;
+
+            &:last-child {
+                text-align: right;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+.adminActions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .buttonEdit {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .buttonEdit svg {
+        fill: $second;
+        width: 25px;
+        height: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .buttonDelete {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .buttonDelete svg {
+        fill: $second;
+        width: 25px;
+        height: 25px;
+        margin: 0;
+        padding: 0;
+    }
+}

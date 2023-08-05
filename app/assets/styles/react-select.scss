@@ -1,0 +1,133 @@
+/* React Select */
+.custom-select {
+	&__control {
+		background-color: transparent !important;
+		border: none !important;
+		border-radius: 0 !important;
+		box-shadow: none !important;
+		width: 500px !important;
+
+		&--menu-is-open {
+			border-color: #54DC8B !important;
+		}
+	}
+
+	&__value-container {
+		padding: 0 !important;
+		cursor: text !important;
+	}
+
+	&__input-container {
+		color: #999aa5 !important;
+		font-family: Montserrat;
+	}
+
+	&__indicator-separator {
+		display: none !important;
+		font-family: Montserrat;
+	}
+
+	&__indicators {
+		cursor: pointer !important;
+		font-family: Montserrat;
+	}
+
+	&__indicator {
+		color: #66676e !important;
+		font-family: Montserrat;
+
+		&:hover {
+			color: #999aa5 !important;
+			font-family: Montserrat;
+		}
+	}
+
+	&__multi-value {
+		background-color: rgba(#999aa5, 0.6) !important;
+		border-radius: 0.5rem !important;
+		font-family: Montserrat;
+		padding: 5px;
+	}
+
+	&__multi-value__label {
+		font-size: 16px !important;
+		font-family: Montserrat;
+		color: rgba(white, 0.7) !important;
+		font-family: Montserrat;
+	}
+
+	&__multi-value__remove {
+		color: rgba(white, 0.8) !important;
+		font-family: Montserrat;
+		cursor: pointer;
+
+		&:hover {
+			background-color: transparent !important;
+			color: rgba(white, 1) !important;
+			font-family: Montserrat;
+		}
+	}
+
+	&__menu {
+		background-color: #292a2e !important;
+		color: rgba(white, 0.6) !important;
+		font-family: Montserrat;
+	}
+
+	&__option {
+		cursor: pointer !important;
+		font-family: Montserrat;
+		&--is-focused {
+			background-color: lighten(#292a2e, 8%) !important;
+			font-family: Montserrat;
+		}
+	}
+
+	&-container {
+		>div {
+			outline: none !important;
+			box-shadow: none !important;
+			font-family: Montserrat;
+		}
+
+		.form-control__control {
+			outline: none;
+			border: none;
+			transition-property: all;
+			transition-timing-function: ease-in-out;
+			transition-duration: 200ms;
+			border-color: #ced4da !important;
+			box-shadow: none !important;
+			font-family: Montserrat;
+		}
+
+		&:hover,
+		&--menu-is-open {
+			border-color: #ced4da !important;
+			font-family: Montserrat;
+		}
+
+		.form-control__indicators {
+			cursor: pointer;
+			font-family: Montserrat;
+		}
+	}
+
+	&__menu {
+		@keyframes scaleIn {
+			0% {
+				opacity: 0;
+				transform: scale(0.9);
+			}
+
+			50% {
+				opacity: 0.3;
+			}
+
+			100% {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+}

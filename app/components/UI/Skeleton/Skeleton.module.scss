@@ -1,0 +1,11 @@
+.skeletonLoader {
+    border-radius: 8px;
+    height: 25px;
+    margin: 0 0 30px 0;
+}
+.skeletonLoader:first-child {
+    margin: 0 0 40px 0;
+}
+.skeletonLoader:last-child {
+    margin: 0;
+}

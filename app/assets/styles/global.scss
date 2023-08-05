@@ -1,0 +1,98 @@
+@import 'app/assets/styles/const.scss';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import 'react-redux-toastr/src/styles/index';
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit, Montserrat sans-sarif';
+    background-color: $gray6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+input[types='file'],
+input[types='file']::-webkit-file-upload-button {
+    cursor: pointer;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #222326;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: $gray3;
+}
+
+.layout {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    // max-width: 1880px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+}
+
+.container__error {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0 0;
+}
+
+.error {
+    color: #D9DAE8;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+}
+
+.button {
+    width: 160px;
+    height: 50px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #191B1F;
+    margin: 0;
+    outline: none;
+    border: none;
+    background-color: #54DC8B;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

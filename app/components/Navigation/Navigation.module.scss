@@ -1,0 +1,119 @@
+@import 'app/assets/styles/const.scss';
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 20%;
+    padding: 50px;
+    max-width: 250px;
+    border-right: 2px solid $gray5;
+}
+
+.logoWrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logoTitle {
+    color: $white;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.logoSubtitle {
+    color: $gray1;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .menuWrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    .menuWrapActive {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-right: 3px solid $first;
+    }
+
+    .menuSubtitle {
+        color: $gray3;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0 0 10px 0;
+    }
+
+    .menuTitle {
+        color: $gray2;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .menuTitleActive {
+        color: $white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .menuWrap svg {
+        fill: $gray2;
+        width: 25px;
+        height: 25px;
+    }
+
+    .menuWrapActive svg {
+        fill: $first;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.skeletonLoader {
+    border-radius: 8px;
+    height: 25px;
+    margin: 0 0 30px 0;
+}
+
+.skeletonLoader:first-child {
+    margin: 0 0 40px 0;
+}
+
+.skeletonLoader:last-child {
+    margin: 0;
+}

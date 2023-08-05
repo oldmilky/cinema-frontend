@@ -1,0 +1,214 @@
+@import 'app/assets/styles/const.scss';
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 20%;
+    padding: 50px;
+    max-width: 250px;
+    border-left: 2px solid $gray5;
+    position: relative;
+
+    .search {
+        border: 2px solid $gray4;
+        border-radius: 8px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        box-shadow: $shadow;
+
+        .searchInput {
+            width: 190px;
+            outline: none;
+            border: none;
+            background-color: $gray6;
+            color: $gray3;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0 0 0 10px;
+        }
+    }
+
+    .popularMovies {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .popular {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .title {
+            font-family: Montserrat;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: $gray2;
+            margin: 0;
+        }
+
+        .popularContainer {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .poster {
+            width: 70px;
+            height: 110px;
+            border-radius: 8px;
+        }
+
+        .popularTitle {
+            color: $white;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0 0 10px 0;
+        }
+
+        .popularSubtitle {
+            color: $gray3;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin: 0 0 20px 0;
+
+            &:hover {
+                color: $gray2;
+            }
+        }
+
+        .popularStars {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .popularStar {
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: $white;
+            margin: 0;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .buttonMore {
+        width: 250px;
+        height: 50px;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: $gray6;
+        margin: 0;
+        outline: none;
+        border: none;
+        background-color: $first;
+        border-radius: 8px;
+        box-shadow: $shadow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttonFav {
+        width: 250px;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        color: $gray2;
+        box-shadow: $shadow;
+        outline: none;
+        border: none;
+        background-color: $gray5;
+        border-radius: 8px;
+        padding: 15px 10px 15px 10px;
+    }
+}
+
+.list {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    width: 230px;
+    background-color: $gray5;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid $gray4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .listWrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .listWrap:hover {
+        border-right: 2px solid $first;
+    }
+
+    .listImage {
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .listTitle {
+        color: $gray1;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+    }
+}
+
+.notfoundWrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 10px;
+
+    .notfound {
+        color: $gray1;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin: 0;
+    }
+}
+
+.notfoundWrap svg {
+    width: 25px;
+    height: 25px;
+    fill: $gray2;
+}

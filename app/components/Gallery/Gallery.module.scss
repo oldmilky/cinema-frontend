@@ -1,0 +1,84 @@
+@import 'app/assets/styles/const.scss';
+
+.gallery {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+}
+
+.galleryItem {
+    position: relative;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+
+    display: flex;
+    align-items: flex-end;
+    border-radius: 16px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    width: 160px;
+    height: 255px;
+    box-shadow: $shadow;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    &.withText {
+        @include fade-bg-gradient(0deg);
+
+        &::before {
+            border-radius: 16px;
+        }
+    }
+
+    img {
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+        pointer-events: none;
+    }
+
+    .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        z-index: 2;
+        padding: 0 0 10px 0;
+    }
+
+    .title {
+        color: $white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .subtitle {
+        color: $gray2;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0;
+    }
+}
