@@ -1,0 +1,19 @@
+@import 'app/assets/styles/const.scss';
+
+.banner {
+    position: relative;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+
+    @include fade-bg-gradient(10deg);
+
+    img {
+        object-fit: cover;
+        border-radius: 16px;
+    }
+}

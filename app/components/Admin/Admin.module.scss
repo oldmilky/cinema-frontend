@@ -152,6 +152,13 @@
     width: 100%;
 }
 
+.formUser {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
 .formButtonSave {
     width: 250px;
     height: 50px;
@@ -165,6 +172,28 @@
     outline: none;
     border: none;
     background-color: $first;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: $gray1;
+    margin: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     display: flex;
