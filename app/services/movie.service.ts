@@ -36,8 +36,8 @@ export const MovieService = {
   },
 
   async getBySlug(slug: string) {
-    return axiosClassic.get<IMovie>(getMoviesUrl(`/by-slug/${slug}`));
-  },
+		return axiosClassic.get<IMovie>(getMoviesUrl(`/by-slug/${slug}`))
+	},
 
   async createMovie() {
     return axios.post<string>(getMoviesUrl(`/`));
@@ -49,5 +49,11 @@ export const MovieService = {
 
   async deleteMovie(_id: string) {
     return axios.delete<string>(getMoviesUrl(`/${_id}`));
+  },
+
+  async updateCountOpened(slug: string) {
+    return axiosClassic.put<string>(getMoviesUrl("/update-count-opened"), {
+      slug,
+    });
   },
 };
