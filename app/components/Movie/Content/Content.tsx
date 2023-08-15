@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { getActorUrl, getGenreUrl } from "../../../config/url.config";
 import { IMovie } from "../../../shared/types/movie.types";
+import FavoriteButton from "../../UI/Banner/FavoriteButton";
 import MaterialIcon from "../../UI/MaterialIcon";
 import s from "./Content.module.scss";
 import ContentList from "./ContentList";
@@ -34,8 +35,11 @@ const Content: FC<{ movie: IMovie }> = ({ movie }) => {
       </div>
 
       <div className={s.rating}>
-        <MaterialIcon name="MdStars" />
-        <span className={s.span}>{movie.rating}</span>
+        <FavoriteButton movieId={movie._id} />
+        <div className={s.ratingWrap}>
+          <MaterialIcon name="MdStars" />
+          <span className={s.span}>{movie.rating}</span>
+        </div>
       </div>
     </div>
   );

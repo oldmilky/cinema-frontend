@@ -10,7 +10,7 @@ const Catalog: FC<ICatalog> = ({ movies, title, description }) => {
       <h1 className={s.title}>{title}</h1>
       {description && <p className={s.description}>{description}</p>}
       <div className={s.catalog}>
-        {movies.map(movie => (
+        {movies.map((movie) => (
           <CatalogItem
             key={movie._id}
             item={{

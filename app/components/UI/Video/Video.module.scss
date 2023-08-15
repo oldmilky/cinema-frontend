@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    box-shadow: $shadow;
+    border-radius: 16px;
 
     .videoPlayer {
         width: 100%;

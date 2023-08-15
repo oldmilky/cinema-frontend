@@ -1,5 +1,3 @@
-"use client";
-
 import { FC } from "react";
 import { FormState, UseFormRegister } from "react-hook-form";
 import { validEmail } from "../../shared/types/regex";

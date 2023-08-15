@@ -5,7 +5,7 @@ import MovieItem from "./MovieItem";
 const MovieList: FC<IMovieList> = ({ link, title, movies }) => {
   return (
     <>
-      {movies.slice(3, 6).map(movie => (
+      {movies.map(movie => (
         <MovieItem key={movie._id} movie={movie} />
       ))}
     </>

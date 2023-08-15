@@ -1,11 +1,12 @@
+import Link from "next/link";
 import { FC } from "react";
 import s from "../../Sidebar.module.scss";
 
 const NotAuthFavorites: FC = () => {
   return (
-    <button className={s.buttonFav}>
+    <Link className={s.buttonFav} href="/auth">
       For viewing favorites you need authorize!
-    </button>
+    </Link>
   );
 };
 

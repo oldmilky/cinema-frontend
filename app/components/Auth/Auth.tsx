@@ -26,7 +26,7 @@ const Auth: FC = () => {
 
   const { login, register } = useActions();
 
-  const onSubmit: SubmitHandler<IAuthInput> = async data => {
+  const onSubmit: SubmitHandler<IAuthInput> = async (data) => {
     if (type === "login") {
       await login(data);
     } else if (type === "register") {

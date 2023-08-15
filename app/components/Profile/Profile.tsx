@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { useForm } from "react-hook-form";
 import AuthFields from "../Auth/AuthFields";
+import Favorites from "../UI/Favorites/Favorites";
 import SkeletonLoader from "../UI/Skeleton/Sketelon";
 import { IProfileInput } from "./Profile.interface";
 import s from "./Profile.module.scss";
@@ -16,7 +17,7 @@ const Profile: FC = () => {
 
   return (
     <section className={s.profile}>
-      <h1 className={s.title}>Auth</h1>
+      <h1 className={s.title}>Edit profile</h1>
       <div className={s.wrap}>
         {isLoading ? (
           <SkeletonLoader />
@@ -29,6 +30,7 @@ const Profile: FC = () => {
           </form>
         )}
       </div>
+      <Favorites />
     </section>
   );
 };

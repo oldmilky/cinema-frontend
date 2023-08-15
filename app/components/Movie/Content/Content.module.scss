@@ -92,12 +92,19 @@
 
     .rating {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 5px;
+        gap: 20px;
         svg {
             fill: $yellow;
             width: 35px;
             height: 35px;
         }
+    }
+
+    .ratingWrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 }

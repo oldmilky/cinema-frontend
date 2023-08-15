@@ -9,6 +9,8 @@
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+    box-shadow: $shadow;
+    border-radius: 16px;
 
     @include fade-bg-gradient(10deg);
 
@@ -16,4 +18,11 @@
         object-fit: cover;
         border-radius: 16px;
     }
+}
+
+.favoriteButton {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 99;
 }

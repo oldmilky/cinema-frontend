@@ -1,6 +1,6 @@
 @import 'app/assets/styles/const.scss';
 
-.container {
+.collections {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@
         margin: 0 0 40px 0;
     }
 
-    .description {
+    .subtitle {
         color: $gray2;
         font-family: Montserrat;
         font-size: 17px;
@@ -36,7 +36,7 @@
         text-align: center;
     }
 
-    .catalog {
+    .container {
         width: 90%;
         height: auto;
         display: flex;
@@ -48,7 +48,19 @@
         gap: 40px;
     }
 
-    .catalogItem {
+    .item {
+        position: relative;
+        transition-property: transform;
+        transition-timing-function: ease-in-out;
+        transition-duration: 200ms;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+    }
+
+    .image {
         position: relative;
         transition-property: transform;
         transition-timing-function: ease-in-out;
@@ -58,14 +70,11 @@
         align-items: flex-start;
         border-radius: 16px;
         overflow: hidden;
-        flex: 0 0 auto;
         width: 330px;
         height: 170px;
         box-shadow: $shadow;
 
-        &:hover {
-            transform: translateY(-5px);
-        }
+        z-index: 4;
 
         &.withText {
             @include fade-bg-gradient(0deg);
@@ -74,6 +83,42 @@
                 border-radius: 16px;
             }
         }
+    }
+
+    .secondImage {
+        position: relative;
+        transition-property: transform;
+        transition-timing-function: ease-in-out;
+        transition-duration: 200ms;
+
+        border-radius: 16px;
+        overflow: hidden;
+        width: 300px;
+        height: 170px;
+
+        position: absolute;
+        top: -10px;
+        left: 0;
+        z-index: 3;
+        @include fade-bg-gradient(50deg);
+    }
+
+    .thirdImage {
+        position: relative;
+        transition-property: transform;
+        transition-timing-function: ease-in-out;
+        transition-duration: 200ms;
+
+        border-radius: 16px;
+        overflow: hidden;
+        width: 270px;
+        height: 170px;
+
+        position: absolute;
+        top: -20px;
+        left: 0;
+        z-index: 2;
+        @include fade-bg-gradient(-50deg);
     }
 
     .content {
@@ -87,27 +132,17 @@
         align-items: center;
         justify-content: center;
         gap: 15px;
-        z-index: 2;
-        padding: 0 0 10px 0;
-    }
+        z-index: 5;
+        padding: 0 0 20px 0;
 
-    .titleItem {
-        color: $white;
-        font-family: Montserrat;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        margin: 0;
-    }
-
-    .subtitleItem {
-        color: $gray2;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        margin: 0;
+        .titleItem {
+            color: $white;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin: 0;
+        }
     }
 }
