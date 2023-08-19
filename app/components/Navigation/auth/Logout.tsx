@@ -6,7 +6,7 @@ import s from "../Navigation.module.scss";
 const LogoutButton: FC = () => {
   const { logout } = useActions();
 
-  const handleLogout = (e: MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const handleLogout = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     logout();
   };

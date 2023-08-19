@@ -9,7 +9,7 @@ interface IAdminTable {
   tableItems: ITableItem[];
   isLoading: boolean;
   headerItems: string[];
-  removeHandler: (id: string) => void;
+  removeHandler: (id: string) => void
 }
 
 const AdminTable: FC<IAdminTable> = ({
@@ -29,7 +29,7 @@ const AdminTable: FC<IAdminTable> = ({
           <AdminTableItem
             key={tableItem._id}
             tableItem={tableItem}
-            removeHandler={() => removeHandler(tableItem._id)}
+            removeHandler={removeHandler}
           />
         ))
       ) : (

@@ -1,5 +1,5 @@
 import Admin from "../../../../app/components/Admin/Admin";
-import UserEdit from "../../../../app/components/Admin/users/userEdit";
+import UserEdit from "../../../../app/components/Admin/users/UserEdit";
 import { NextPageAuth } from "../../../../app/shared/types/auth.types";
 import Meta from "../../../../app/utils/meta/Meta";
 

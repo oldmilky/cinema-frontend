@@ -18,7 +18,7 @@ const AdminStatistics: FC = () => {
     "Most popular movie in admin",
     () => MovieService.getMostPopularMovies(),
     {
-      select: (data): IMovie => data[0],
+      select: (data): IMovie => data[0] ?? {},
     }
   );
 
@@ -38,12 +38,12 @@ const AdminStatistics: FC = () => {
         <div className={s.statistic}>
           <h1 className={s.titleMovie}>The most popular movie</h1>
           <h2 className={s.subtitle}>Opened {movie?.countOpened} times</h2>
-          <Link href={getMovieUrl(movie?.slug)}>
+          <Link href={getMovieUrl(movie?.slug ?? "")}>
             <Image
               width={285}
               height={176}
-              src={movie?.poster}
-              alt={movie?.title}
+              src={movie?.poster ?? ""}
+              alt={movie?.title ?? ""}
               className={s.image}
               unoptimized
             />

@@ -5,7 +5,7 @@ import s from "./AdminTable.module.scss";
 
 interface IAdminActions {
   editUrl: string;
-  removeHandler: (id: string) => void;
+  removeHandler: () => void;
 }
 
 const AdminActions: FC<IAdminActions> = ({ editUrl, removeHandler }) => {

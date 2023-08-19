@@ -6,12 +6,15 @@ import { IAdminTableItem } from "./admin-table.interface";
 const AdminTableItem: FC<IAdminTableItem> = ({ tableItem, removeHandler }) => {
   return (
     <div className={s.item}>
-      {tableItem.items.map(value => (
+      {tableItem.items.map((value) => (
         <div className={s.itemValue} key={value}>
           {value}
         </div>
       ))}
-      <AdminActions editUrl={tableItem.editUrl} removeHandler={removeHandler} />
+      <AdminActions
+        editUrl={tableItem.editUrl}
+        removeHandler={() => removeHandler(tableItem._id)}
+      />
     </div>
   );
 };
